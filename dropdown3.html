@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head>
+    <style>
+        body{
+            background-color: antiquewhite;
+        }
+        nav .wrapper{
+            list-style: none;
+            background-color: black;
+            padding:0;
+            margin:0;
+            
+        }
+        .wrapper li{
+            display: inline-block; 
+        } 
+        .dropdown-table td,
+        .dropdown-table tr{
+            padding: 0;
+            margin: 0;
+        }
+        .dropdown-table td{
+            padding:5px
+        }
+        .dropdown-table{
+            display: none;
+            background-color: rgba(0,0,0,0.5);
+            position: absolute;
+    
+        }
+        
+        a{
+            display: inline-block;
+            padding:12px 16px;
+            text-decoration: none;
+            text-align: center;
+            color: aliceblue;
+            
+        }
+        .dropdown-li table a{
+            text-align: left;
+            padding-left: 2px;
+            padding-right: 100px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-radius: 0.2em;
+        }
+        .dropdown-li{
+            width:100px;
+        }
+        
+        a:hover, .dropdown-li:hover .linkbtn {
+            background-color: red;
+            border-radius: 0.5em;
+        }
+        .dropdown-li:hover .dropdown-table{
+            display: block;
+        }
+        
+    </style>
+</head>
+    <body>
+       <nav>
+            <ul class="wrapper">
+                <li><a href="#">Home</a></li>
+                <li class="dropdown-li"><a class="linkbtn" href="#">Genre</a>
+                    <table class="dropdown-table">
+                        <tr>
+                            <td><a href="#">Action</a></td> <td><a href="#">Fantasy</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">Comedy</a></td> <td><a href="#">Harrow</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">Triller</a></td> <td><a href="#">Crime</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">Adventure</a></td> <td><a href="#">Romance</a></td>
+                        </tr>
+                    </table>
+                </li>
+                <li class="dropdown-li" ><a class="linkbtn" href="#">Country</a>
+                    <table class="dropdown-table">
+                        <tr>
+                            <td><a href="#">Jamaica</a></td> <td><a href="#">USA</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">Canada</a></td> <td><a href="#">Philippines</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">Bulgaria</a></td> <td><a href="#">France</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">Germany</a></td> <td><a href="#">Puerto Rico</a></td>
+                        </tr>
+                    </table>
+                </li>
+                <li><a href="#">TV-Series</a></li>
+                <li><a href="#">Top IMDb</a></li>
+                <li><a href="#">Request</a></li>
+                                              
+           </ul>
+       </nav>
+        
+        
+    </body>
+</html>
